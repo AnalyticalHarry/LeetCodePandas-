@@ -1,6 +1,6 @@
 # Leet Code - Pandas Data Frame
 
-# Table of Contents
+### Table of Contents
 
 - [Pandas Data Structures]
 - [Data Inspection]
