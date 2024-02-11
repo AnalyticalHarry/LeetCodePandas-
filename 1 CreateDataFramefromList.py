@@ -45,9 +45,7 @@ student_data = [
     [3, 11],
     [4, 20]
 ]
-
-df = createDataframe(student_data)
-print(df)
+createDataframe(student_data)
 
 ## Author: Hemant Thapa
 ## Date: 11.02.2024
