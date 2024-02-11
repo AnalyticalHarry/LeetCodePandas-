@@ -39,8 +39,8 @@
 import pandas as pd
 
 def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
-    df = pd.DataFrame(students)
-    df.dropna(inplace=True)
+    df = pd.DataFrame(students, dtype=object)  
+    df.dropna(subset=['name'], inplace=True) 
     return df
 
 students = [
@@ -50,7 +50,7 @@ students = [
     {"student_id": 849, "name": "Willow", "age": 14}
 ]
 
-dropMissingData(students)
+print(dropMissingData(students))
 
 ## Author: Hemant Thapa
 ## Date: 11.02.2024
