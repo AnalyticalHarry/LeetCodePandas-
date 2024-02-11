@@ -38,7 +38,8 @@ import pandas as pd
 
 def selectData(students: pd.DataFrame) -> pd.DataFrame:
     df = pd.DataFrame(students)
-    return df.iloc[0:1,1:3]
+    result = df[df['student_id'] == 101][['name', 'age']]
+    return result
 
 students = [
     {"student_id": 101, "name": "Ulysses", "age": 13},
@@ -47,7 +48,8 @@ students = [
     {"student_id": 3, "name": "Henry", "age": 11}
 ]
 
-selectData(students)
+print(selectData(students))
+
 
 ## Author: Hemant Thapa
 ## Date: 11.02.2024
