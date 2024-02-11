@@ -51,7 +51,6 @@ employees = [
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     df = pd.DataFrame(employees)
-    return df.head(3)
+    return df[0:3]
 
 selectFirstRows(employees)
-
