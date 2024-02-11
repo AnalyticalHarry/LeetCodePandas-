@@ -45,7 +45,7 @@ import pandas as pd
 
 def getDataframeSize(players):
     df = pd.DataFrame(players)
-    rows, cols = df.shape
+    rows, cols = len(df), len(df.columns)
     return [rows, cols]
 
 players = {
@@ -57,7 +57,7 @@ players = {
 }
 
 result = getDataframeSize(players)
-result
+result 
 
 ## Author: Hemant Thapa
 ## Date: 11.02.2024
