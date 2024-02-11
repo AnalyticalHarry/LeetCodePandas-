@@ -54,3 +54,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return df[0:3]
 
 selectFirstRows(employees)
+
+## Author: Hemant Thapa
+## Date: 11.02.2024
+## Challenge: Leet Code 
