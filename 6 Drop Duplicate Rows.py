@@ -55,5 +55,8 @@ customers_data = {
 
 customers_df = pd.DataFrame(customers_data)
 
-result = dropDuplicateEmails(customers_df)
-print(result)
+dropDuplicateEmails(customers_df)
+
+## Author: Hemant Thapa
+## Date: 11.02.2024
+## Challenge: Leet Code 
