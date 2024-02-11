@@ -1,4 +1,4 @@
-# 2884. Modify Columns
+# Modify Columns
 
 # DataFrame employees
 # +-------------+--------+
@@ -51,3 +51,6 @@ employees = pd.DataFrame({
 })
 
 modifySalaryColumn(employees)
+## Author: Hemant Thapa
+## Date: 11.02.2024
+## Challenge: Leet Code 
